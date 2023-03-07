@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list>
 
-class List{
+class Queue{
     public:
         void enqueue(int value){
             ListNode *newNode = (struct ListNode*) malloc(sizeof(ListNode));
@@ -48,7 +48,7 @@ class List{
 };
 
 int main(void){
-    List queue1;
+    Queue queue1;
     std::cout<<queue1.isEmpty()<<std::endl;
     queue1.enqueue(5);
     queue1.enqueue(1);
